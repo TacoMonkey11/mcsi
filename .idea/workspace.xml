@@ -4,29 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="db9bdb25-ebf3-4caf-a46e-535c524362a4" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/kotlinc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build.gradle.kts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradle.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradlew" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradlew.bat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/settings.gradle.kts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/com/github/tacomonkey11/mcsi/Main.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/com/github/tacomonkey11/mcsi/commands/InstallCommand.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/com/github/tacomonkey11/mcsi/commands/MCSICommand.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/com/github/tacomonkey11/mcsi/commands/server/PaperCommand.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/com/github/tacomonkey11/mcsi/commands/server/SpigotCommand.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/com/github/tacomonkey11/mcsi/installers/PaperInstaller.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/com/github/tacomonkey11/mcsi/installers/SpigotInstaller.kt" afterDir="false" />
+    <list default="true" id="db9bdb25-ebf3-4caf-a46e-535c524362a4" name="Changes" comment="Nicer .gitignore which covers more stuff">
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/com/github/tacomonkey11/mcsi/commands/paper/PaperInstallCommand.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/com/github/tacomonkey11/mcsi/commands/paper/PaperListCommand.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/com/github/tacomonkey11/mcsi/commands/spigot/SpigotInstallCommand.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/com/github/tacomonkey11/mcsi/commands/spigot/SpigotListCommand.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/github/tacomonkey11/mcsi/commands/InstallCommand.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/github/tacomonkey11/mcsi/commands/MCSICommand.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/com/github/tacomonkey11/mcsi/commands/MCSICommand.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/github/tacomonkey11/mcsi/commands/server/PaperCommand.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/com/github/tacomonkey11/mcsi/commands/paper/PaperCommand.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/github/tacomonkey11/mcsi/commands/server/SpigotCommand.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/com/github/tacomonkey11/mcsi/commands/spigot/SpigotCommand.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -73,6 +61,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Kotlin File" />
+        <option value="Kotlin Class" />
       </list>
     </option>
   </component>
@@ -100,11 +89,15 @@
   }
 }]]></component>
   <component name="RecentsManager">
+    <key name="MoveKotlinTopLevelDeclarationsDialog.RECENTS_KEY">
+      <recent name="com.github.tacomonkey11.mcsi.commands.paper" />
+      <recent name="com.github.tacomonkey11.mcsi.commands.spigot" />
+    </key>
     <key name="CopyKotlinDeclarationDialog.RECENTS_KEY">
       <recent name="com.github.tacomonkey11.mcsi.commands.server" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.mcsi [distZip]">
+  <component name="RunManager" selected="Kotlin.paper list">
     <configuration name="mcsi [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -152,7 +145,7 @@
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" />
+        <option name="scriptParameters" value="" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -177,19 +170,37 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="install paper" type="JetRunConfigurationType">
+    <configuration name="paper install" type="JetRunConfigurationType">
       <option name="MAIN_CLASS_NAME" value="MainKt" />
       <module name="mcsi.main" />
-      <option name="PROGRAM_PARAMETERS" value="install paper 1.8.9 --install-dir ~/Downloads/ " />
+      <option name="PROGRAM_PARAMETERS" value="paper install 1.8.9 --install-dir ~/Downloads/ " />
       <shortenClasspath name="NONE" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="install spigot" type="JetRunConfigurationType">
+    <configuration name="paper list" type="JetRunConfigurationType">
       <option name="MAIN_CLASS_NAME" value="MainKt" />
       <module name="mcsi.main" />
-      <option name="PROGRAM_PARAMETERS" value="install spigot --craft-bukkit 1.19.2 $USER_HOME$/Downloads/" />
+      <option name="PROGRAM_PARAMETERS" value="paper list -v 1.19.3" />
+      <shortenClasspath name="NONE" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="spigot install" type="JetRunConfigurationType">
+      <option name="MAIN_CLASS_NAME" value="MainKt" />
+      <module name="mcsi.main" />
+      <option name="PROGRAM_PARAMETERS" value="spigot install --craft-bukkit 1.19.2 --install-dir $USER_HOME$/Downloads/" />
+      <shortenClasspath name="NONE" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="spigot list" type="JetRunConfigurationType">
+      <option name="MAIN_CLASS_NAME" value="MainKt" />
+      <module name="mcsi.main" />
+      <option name="PROGRAM_PARAMETERS" value="spigot list" />
       <shortenClasspath name="NONE" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -199,16 +210,18 @@
       <item itemvalue="Gradle.mcsi [build]" />
       <item itemvalue="Gradle.mcsi [distTar]" />
       <item itemvalue="Gradle.mcsi [distZip]" />
-      <item itemvalue="Kotlin.install spigot" />
-      <item itemvalue="Kotlin.install paper" />
+      <item itemvalue="Kotlin.spigot install" />
+      <item itemvalue="Kotlin.spigot list" />
+      <item itemvalue="Kotlin.paper install" />
+      <item itemvalue="Kotlin.paper list" />
       <item itemvalue="Kotlin.MainKt" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Kotlin.MainKt" />
         <item itemvalue="Gradle.mcsi [distZip]" />
         <item itemvalue="Gradle.mcsi [build]" />
         <item itemvalue="Gradle.mcsi [distTar]" />
-        <item itemvalue="Kotlin.MainKt" />
       </list>
     </recent_temporary>
   </component>
@@ -220,8 +233,23 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1665604265082</updated>
-      <workItem from="1665674943860" duration="6587000" />
+      <workItem from="1665674943860" duration="14395000" />
     </task>
+    <task id="LOCAL-00001" summary="Basic Paper + Spigot / CraftBukkit support">
+      <created>1665681673584</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1665681673584</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Nicer .gitignore which covers more stuff">
+      <created>1665706097441</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1665706097441</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -237,5 +265,10 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Basic Paper + Spigot / CraftBukkit support" />
+    <MESSAGE value="Nicer .gitignore which covers more stuff" />
+    <option name="LAST_COMMIT_MESSAGE" value="Nicer .gitignore which covers more stuff" />
   </component>
 </project>
