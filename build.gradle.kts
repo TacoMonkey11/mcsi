@@ -18,7 +18,6 @@ dependencies {
     implementation("com.github.ajalt.clikt:clikt:3.5.0")
     implementation("com.squareup.okhttp3:okhttp:4.10.0")
     implementation("org.jetbrains.kotlinx:kotlinx-serialization-json:1.4.0")
-
 }
 
 tasks.test {
