@@ -4,6 +4,7 @@ import com.github.ajalt.clikt.core.CliktCommand
 import com.github.ajalt.clikt.core.subcommands
 import com.github.ajalt.clikt.parameters.options.versionOption
 import com.github.tacomonkey11.mcsi.commands.burritoSpigot.BurritoSpigotCommand
+import com.github.tacomonkey11.mcsi.commands.pandaSpigot.PandaSpigotCommand
 import com.github.tacomonkey11.mcsi.commands.paper.PaperCommand
 import com.github.tacomonkey11.mcsi.commands.spigot.SpigotCommand
 import com.github.tacomonkey11.mcsi.commands.vanilla.VanillaCommand
@@ -17,7 +18,8 @@ class MCSICommand  : CliktCommand(
             SpigotCommand(),
             PaperCommand(),
             VanillaCommand(),
-            BurritoSpigotCommand()
+            BurritoSpigotCommand(),
+            PandaSpigotCommand()
         )
         versionOption("1.0.0")
     }
